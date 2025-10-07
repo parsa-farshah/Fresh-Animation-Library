@@ -75,13 +75,21 @@
           />
         </figure>
 
+        <div
+          class="w-[80%] h-[50px] border-t border-b border-t-white border-b-white mt-36 mx-auto flex justify-center items-center"
+        >
+          <h5 class="poler text-xl">Fade</h5>
+        </div>
         <!-- fade up section -->
         <div
           data-freshAnimation="fadeUp"
           data-freshAnimationTime="1000"
-          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[100px] border border-[#c7c7c7c4] flex items-center justify-center"
+          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
-          <code class="text-[12px] codeFont">
+        <div class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center">
+          <img id="fadeUpBtn" class="w-[60px] h-[60px] cursor-pointer" src="src/images/copy.png" alt="">
+        </div>
+          <code class="text-[18px] codeFont text-center">
             &lt;div data-freshAnimation="fadeUp" data-freshAnimationTime="1000"
             class="freshAnimation"&gt; &lt;/div&gt;
           </code>
@@ -93,8 +101,33 @@
           class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[40%] border border-[#c7c7c7c4] flex items-center justify-center"
         >
           <code class="text-[12px] codeFont">
-            &lt;div data-freshAnimation="fadeDown" data-freshAnimationTime="1000"
-            class="freshAnimation"&gt; &lt;/div&gt;
+            &lt;div data-freshAnimation="fadeDown"
+            data-freshAnimationTime="1000" class="freshAnimation"&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+        <!-- fade left section -->
+        <div
+          data-freshAnimation="fadeLeft"
+          data-freshAnimationTime="1000"
+          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center"
+        >
+          <code class="text-[12px] codeFont">
+            &lt;div data-freshAnimation="fadeDown"
+            data-freshAnimationTime="1000" class="freshAnimation"&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+        <!-- fade right section -->
+        <div
+          data-freshAnimation="fadeRight"
+          data-freshAnimationTime="1000"
+          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[40%] border border-[#c7c7c7c4] flex items-center justify-center"
+        >
+          <code class="text-[12px] codeFont">
+            &lt;div data-freshAnimation="fadeDown"
+            data-freshAnimationTime="1000" class="freshAnimation"&gt;
+            &lt;/div&gt;
           </code>
         </div>
         <!-- red section -->

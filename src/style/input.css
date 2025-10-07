@@ -1,0 +1,60 @@
+@import "tailwindcss";
+/* npx @tailwindcss/cli -i ./src/style/input.css -o ./src/style/output.css --watch */
+
+@font-face {
+  font-family: "bartle";
+  src: url(../fonts/BBHSansBartle-Regular.ttf);
+}
+
+@font-face {
+  font-family: "poler";
+  src: url(../fonts/PollerOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "codeFont";
+  src: url(../fonts/FiraCode-VariableFont_wght.ttf);
+}
+
+@layer utilities {
+  /* fades */
+  .fadeUp {
+    @apply opacity-0 translate-y-[100%];
+  }
+  .fadeDown {
+    @apply opacity-0 -translate-y-[100%];
+  }
+  .codeFont{
+    font-family: "codeFont";
+  }
+  .bartle {
+    font-family: bartle;
+  }
+  .poler {
+    font-family: poler;
+  }
+  .freshAnimation {
+    @apply duration-1000;
+  }
+  .op {
+    @apply opacity-0;
+  }
+  .right {
+    @apply translate-x-[600%];
+  }
+  .left {
+    @apply -translate-x-[400%];
+  }
+  .arrowDown {
+    animation: arrowDown 0.4s infinite alternate;
+  }
+}
+
+@keyframes arrowDown {
+  0% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 15px;
+  }
+}

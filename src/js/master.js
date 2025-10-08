@@ -2,26 +2,20 @@
 let selectDiv = document.querySelectorAll(".freshAnimation");
 
 selectDiv.forEach((val) => {
-  let classAnimation = val.getAttribute(
-    "data-freshAnimation",
-    "data-freshAnimation"
-  );
+  let classAnimation = val.getAttribute("data-freshAnimation");
+  let timeAnimation = val.getAttribute("data-freshAnimationTime") / 1000;
+
   val.classList.add(classAnimation);
+  val.style.transition = `all ${timeAnimation}s ease`;
   val.setAttribute("data-top", val.offsetTop);
-  let timeAnimation = val.getAttribute(
-    "freshAnimationTime",
-    "freshAnimationTime"
-  );
 
   window.addEventListener("scroll", () => {
     let st = parseInt(window.scrollY);
-    if (st + 400 > val.getAttribute("data-top", "data-top")) {
+    let top = parseInt(val.getAttribute("data-top"));
+    if (st + 400 > top) {
       val.classList.remove(classAnimation);
-      val.classList.add(`duration-${timeAnimation}`);
     } else {
       val.classList.add(classAnimation);
-      val.classList.remove(`duration-${timeAnimation}`);
-      console.log("hloo");
     }
   });
 });
@@ -96,4 +90,52 @@ fadeUpRightBtn.addEventListener("click", () => {
     fadeUpRightBtn.setAttribute("src", "src/images/copy.png");
   }, 3000);
   navigator.clipboard.writeText(fadeUpRightCode.innerHTML);
+});
+
+// copy flip left
+let flipLeftBtn = document.querySelector("#flipLeftBtn");
+let flipLeftCode = document.querySelector("#flipLeftCode");
+
+flipLeftBtn.addEventListener("click", () => {
+  flipLeftBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    flipLeftBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(flipLeftCode.innerHTML);
+});
+
+// copy flip right
+let flipRightBtn = document.querySelector("#flipRightBtn");
+let flipRightCode = document.querySelector("#flipRightCode");
+
+flipRightBtn.addEventListener("click", () => {
+  flipRightBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    flipRightBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(flipRightCode.innerHTML);
+});
+
+// copy flip up
+let flipUpBtn = document.querySelector("#flipUpBtn");
+let flipUpCode = document.querySelector("#flipUpCode");
+
+flipUpBtn.addEventListener("click", () => {
+  flipUpBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    flipUpBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(flipUpCode.innerHTML);
+});
+
+// copy flip down
+let flipDownBtn = document.querySelector("#flipDownBtn");
+let flipDownCode = document.querySelector("#flipDownCode");
+
+flipDownBtn.addEventListener("click", () => {
+  flipDownBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    flipDownBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(flipDownCode.innerHTML);
 });

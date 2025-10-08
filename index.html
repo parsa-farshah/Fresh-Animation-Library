@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="src/style/output.css" />
   </head>
   <body class="overflow-x-hidden text-white">
-    <main class="w-full flex h-[400vh] flex-wrap">
+    <main class="w-full flex flex-wrap overflow-hidden pb-72">
       <!-------------------------------- navbar -------------------------->
       <nav
         class="w-[90%] border h-14 flex items-center justify-between backdrop-blur-3xl absolute left-[50%] top-3 -translate-x-1/2 bg-[#ffffff0a] z-10 rounded-3xl px-4"
       >
-        <span class="bartle text-white">Fresh Animation</span>
-        <ul class="flex gap-8 justify-center">
+        <span class="bartle text-white text-[7px] md:text-[16px]"
+          >Fresh Animation</span
+        >
+        <ul class="gap-8 justify-center hidden md:flex">
           <li>
             <a
               href="#"
@@ -45,7 +47,9 @@
         </ul>
         <!-- github -->
         <div>
-          <h2 class="poler text-white capitalize">prsa-farshah</h2>
+          <h2 class="poler text-white capitalize text-[12px] md:text-[16px]">
+            prsa-farshah
+          </h2>
         </div>
       </nav>
       <!-------------------------------- bg fixed ------------------------->
@@ -54,12 +58,12 @@
       ></div>
       <!-------------------- first section ---------------------->
       <div class="w-full h-full relative">
-        <p class="poler text-5xl text-center mt-[150px]">
+        <p class="poler text-sm md:text-5xl text-center mt-[150px]">
           fresh animation library for you to make smooth animation for your
           design and tailwind project
         </p>
         <span
-          class="poler text-2xl text-center w-full flex justify-center mt-20"
+          class="poler text-[15px] md:text-2xl text-center w-full flex justify-center mt-20"
           >Animate tailwind On Scroll Library
         </span>
         <h3 class="poler text-2xl text-center w-full flex justify-center mt-5">
@@ -69,7 +73,7 @@
           class="w-full flex justify-center absolute left-[50%] -translate-x-1/2"
         >
           <img
-            class="arrowDown flex justify-center"
+            class="arrowDown flex justify-center w-[80px] h-[80px] md:w-[100px] md:h-[100px] duration-700"
             src="src/images/arrowDown.png"
             alt=""
           />
@@ -84,58 +88,94 @@
         <div
           data-freshAnimation="fadeUp"
           data-freshAnimationTime="1000"
-          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
-        <div class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center">
-          <img id="fadeUpBtn" class="w-[60px] h-[60px] cursor-pointer" src="src/images/copy.png" alt="">
-        </div>
-          <code class="text-[18px] codeFont text-center">
-            &lt;div data-freshAnimation="fadeUp" data-freshAnimationTime="1000"
-            class="freshAnimation"&gt; &lt;/div&gt;
-          </code>
+          <div
+            class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
+          >
+            <img
+              id="fadeUpBtn"
+              class="w-[60px] h-[60px] cursor-pointer"
+              src="src/images/copy.png"
+              alt=""
+            />
+          </div>
+          <xmp
+            id="fadeUpCode"
+            class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
+            <div data-freshAnimation="fadeUp" data-freshAnimationTime="1000"
+            class="freshAnimation"></div>
+          </xmp>
         </div>
         <!-- fade down section -->
         <div
           data-freshAnimation="fadeDown"
           data-freshAnimationTime="1000"
-          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[40%] border border-[#c7c7c7c4] flex items-center justify-center"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
-          <code class="text-[12px] codeFont">
-            &lt;div data-freshAnimation="fadeDown"
-            data-freshAnimationTime="1000" class="freshAnimation"&gt;
-            &lt;/div&gt;
-          </code>
+          <div
+            class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
+          >
+            <img
+              id="fadeDownBtn"
+              class="w-[60px] h-[60px] cursor-pointer"
+              src="src/images/copy.png"
+              alt=""
+            />
+          </div>
+          <xmp
+            id="fadeDownCode"
+            class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
+            <div data-freshAnimation="fadeDown" data-freshAnimationTime="1000"
+            class="freshAnimation"></div>
+          </xmp>
         </div>
         <!-- fade left section -->
         <div
           data-freshAnimation="fadeLeft"
           data-freshAnimationTime="1000"
-          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
-          <code class="text-[12px] codeFont">
-            &lt;div data-freshAnimation="fadeDown"
-            data-freshAnimationTime="1000" class="freshAnimation"&gt;
-            &lt;/div&gt;
-          </code>
+          <div
+            class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
+          >
+            <img
+              id="fadeLeftBtn"
+              class="w-[60px] h-[60px] cursor-pointer"
+              src="src/images/copy.png"
+              alt=""
+            />
+          </div>
+          <xmp
+            id="fadeLeftCode"
+            class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
+            <div data-freshAnimation="fadeLeft" data-freshAnimationTime="1000"
+            class="freshAnimation"></div>
+          </xmp>
         </div>
         <!-- fade right section -->
         <div
           data-freshAnimation="fadeRight"
           data-freshAnimationTime="1000"
-          class="freshAnimation w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[40%] border border-[#c7c7c7c4] flex items-center justify-center"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
-          <code class="text-[12px] codeFont">
-            &lt;div data-freshAnimation="fadeDown"
-            data-freshAnimationTime="1000" class="freshAnimation"&gt;
-            &lt;/div&gt;
-          </code>
+          <div
+            class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
+          >
+            <img
+              id="fadeRightBtn"
+              class="w-[60px] h-[60px] cursor-pointer"
+              src="src/images/copy.png"
+              alt=""
+            />
+          </div>
+          <xmp
+            id="fadeRightCode"
+            class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
+            <div data-freshAnimation="fadeRight" data-freshAnimationTime="1000"
+            class="freshAnimation"></div>
+          </xmp>
         </div>
-        <!-- red section -->
-        <div
-          data-freshAnimation="right"
-          data-freshAnimationTime="1000"
-          class="freshAnimation w-[300px] h-[200px] bg-red-700 mt-44 ml-56"
-        ></div>
       </div>
     </main>
   </body>

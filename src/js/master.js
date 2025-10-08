@@ -28,10 +28,48 @@ selectDiv.forEach((val) => {
 
 // copy fade up
 let fadeUpBtn = document.querySelector("#fadeUpBtn");
+let fadeUpCode = document.querySelector("#fadeUpCode");
 
 fadeUpBtn.addEventListener("click", () => {
   fadeUpBtn.setAttribute("src", "src/images/tick.png");
   setTimeout(() => {
     fadeUpBtn.setAttribute("src", "src/images/copy.png");
   }, 3000);
+  navigator.clipboard.writeText(fadeUpCode.innerHTML);
+});
+
+// copy fade Down
+let fadeDownBtn = document.querySelector("#fadeDownBtn");
+let fadeDownCode = document.querySelector("#fadeDownCode");
+
+fadeDownBtn.addEventListener("click", () => {
+  fadeDownBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeDownBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeDownCode.innerHTML);
+});
+
+// copy fade left
+let fadeLeftBtn = document.querySelector("#fadeLeftBtn");
+let fadeLeftCode = document.querySelector("#fadeLeftCode");
+
+fadeLeftBtn.addEventListener("click", () => {
+  fadeLeftBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeLeftBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeLeftCode.innerHTML);
+});
+
+// copy fade right
+let fadeRightBtn = document.querySelector("#fadeRightBtn");
+let fadeRightCode = document.querySelector("#fadeRightCode");
+
+fadeRightBtn.addEventListener("click", () => {
+  fadeRightBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeRightBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeRightCode.innerHTML);
 });

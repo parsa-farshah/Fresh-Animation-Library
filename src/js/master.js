@@ -139,3 +139,39 @@ flipDownBtn.addEventListener("click", () => {
   }, 3000);
   navigator.clipboard.writeText(flipDownCode.innerHTML);
 });
+
+// copy zoom in
+let zoomInBtn = document.querySelector("#zoomInBtn");
+let zoomInCode = document.querySelector("#zoomInCode");
+
+zoomInBtn.addEventListener("click", () => {
+  zoomInBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    zoomInBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(zoomInCode.innerHTML);
+});
+
+// copy zoom in up
+let zoomInUpBtn = document.querySelector("#zoomInUpBtn");
+let zoomInUpCode = document.querySelector("#zoomInUpCode");
+
+zoomInUpBtn.addEventListener("click", () => {
+  zoomInUpBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    zoomInUpBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(zoomInUpCode.innerHTML);
+});
+
+// copy zoom in down
+let zoomInDownBtn = document.querySelector("#zoomInDownBtn");
+let zoomInDownCode = document.querySelector("#zoomInDownCode");
+
+zoomInDownBtn.addEventListener("click", () => {
+  zoomInDownBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    zoomInDownBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(zoomInDownCode.innerHTML);
+});

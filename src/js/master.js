@@ -73,3 +73,27 @@ fadeRightBtn.addEventListener("click", () => {
   }, 3000);
   navigator.clipboard.writeText(fadeRightCode.innerHTML);
 });
+
+// copy fade up left
+let fadeUpLeftBtn = document.querySelector("#fadeUpLeftBtn");
+let fadeUpLeftCode = document.querySelector("#fadeUpLeftCode");
+
+fadeUpLeftBtn.addEventListener("click", () => {
+  fadeUpLeftBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeUpLeftBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeUpLeftCode.innerHTML);
+});
+
+// copy fade up right
+let fadeUpRightBtn = document.querySelector("#fadeUpRightBtn");
+let fadeUpRightCode = document.querySelector("#fadeUpRightCode");
+
+fadeUpRightBtn.addEventListener("click", () => {
+  fadeUpRightBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeUpRightBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeUpRightCode.innerHTML);
+});

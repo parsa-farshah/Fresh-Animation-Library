@@ -243,6 +243,15 @@
   .mt-\[180px\] {
     margin-top: 180px;
   }
+  .mr-\[1\] {
+    margin-right: 1;
+  }
+  .mr-\[10\%\] {
+    margin-right: 10%;
+  }
+  .mr-\[100px\] {
+    margin-right: 100px;
+  }
   .ml-\[5\%\] {
     margin-left: 5%;
   }

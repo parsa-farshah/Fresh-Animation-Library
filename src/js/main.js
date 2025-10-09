@@ -1,25 +1,3 @@
-// select div s want to get animation
-let selectDiv = document.querySelectorAll(".freshAnimation");
-
-selectDiv.forEach((val) => {
-  let classAnimation = val.getAttribute("data-freshAnimation");
-  // let timeAnimation = val.getAttribute("data-freshAnimationTime") / 300;
-
-  val.classList.add(classAnimation);
-  // val.style.transition = `all ${timeAnimation}s ease`;
-  val.setAttribute("data-top", val.offsetTop);
-
-  window.addEventListener("scroll", () => {
-    let st = parseInt(window.scrollY);
-    let top = parseInt(val.getAttribute("data-top"));
-    if (st + 400 > top) {
-      val.classList.remove(classAnimation);
-    } else {
-      val.classList.add(classAnimation);
-    }
-  });
-});
-
 // copy fade up
 let fadeUpBtn = document.querySelector("#fadeUpBtn");
 let fadeUpCode = document.querySelector("#fadeUpCode");
@@ -174,4 +152,66 @@ zoomInDownBtn.addEventListener("click", () => {
     zoomInDownBtn.setAttribute("src", "src/images/copy.png");
   }, 3000);
   navigator.clipboard.writeText(zoomInDownCode.innerHTML);
+});
+
+
+// copy zoom in right
+let zoomInRightBtn = document.querySelector("#zoomInRightBtn");
+let zoomInRightCode = document.querySelector("#zoomInRightCode");
+
+zoomInRightBtn.addEventListener("click", () => {
+  zoomInRightBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    zoomInRightBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(zoomInRightCode.innerHTML);
+});
+
+// copy zoom in left
+let zoomInLeftBtn = document.querySelector("#zoomInLeftBtn");
+let zoomInLeftCode = document.querySelector("#zoomInLeftCode");
+
+zoomInLeftBtn.addEventListener("click", () => {
+  zoomInLeftBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    zoomInLeftBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(zoomInLeftCode.innerHTML);
+});
+
+// copy custom duration
+let fadeUpCustomDurationBtn = document.querySelector("#fadeUpCustomDurationBtn");
+let fadeUpCustomDurationCode = document.querySelector("#fadeUpCustomDurationCode");
+
+fadeUpCustomDurationBtn.addEventListener("click", () => {
+  fadeUpCustomDurationBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeUpCustomDurationBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeUpCustomDurationCode.innerHTML);
+});
+
+// copyfade up custom timing function
+let fadeUpCustomTimingBtn = document.querySelector("#fadeUpCustomTimingBtn");
+let fadeUpCustomTimingCode = document.querySelector("#fadeUpCustomTimingCode");
+
+fadeUpCustomTimingBtn.addEventListener("click", () => {
+  fadeUpCustomTimingBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeUpCustomTimingBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeUpCustomTimingCode.innerHTML);
+});
+
+
+// copy fadeup Delay
+let fadeUpCustomDelayBtn = document.querySelector("#fadeUpCustomDelayBtn");
+let fadeUpCustomDelayCode = document.querySelector("#fadeUpCustomDelayCode");
+
+fadeUpCustomDelayBtn.addEventListener("click", () => {
+  fadeUpCustomDelayBtn.setAttribute("src", "src/images/tick.png");
+  setTimeout(() => {
+    fadeUpCustomDelayBtn.setAttribute("src", "src/images/copy.png");
+  }, 3000);
+  navigator.clipboard.writeText(fadeUpCustomDelayCode.innerHTML);
 });

@@ -53,6 +53,8 @@
     @apply rotate-x-90 origin-center transform-3d;
   }
 
+  /* zooms */
+
   .zoomIn {
     @apply scale-0 opacity-0;
   }
@@ -80,9 +82,6 @@
   .poler {
     font-family: poler;
   }
-  /* .freshAnimation {
-    @apply duration-500;
-  } */
   .arrowDown {
     animation: arrowDown 0.4s infinite alternate;
   }

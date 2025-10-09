@@ -1,4 +1,3 @@
-import "./fresh.css";
 // select div s want to get animation
 let selectDiv = document.querySelectorAll(".freshAnimation");
 
@@ -20,4 +19,3 @@ selectDiv.forEach((val) => {
     }
   });
 });
-

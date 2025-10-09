@@ -10,7 +10,7 @@
     <main class="w-full flex flex-wrap overflow-hidden pb-72">
       <!-------------------------------- navbar -------------------------->
       <nav
-        class="w-[90%] border h-14 flex items-center justify-between backdrop-blur-3xl absolute left-[50%] top-3 -translate-x-1/2 bg-[#ffffff0a] z-10 rounded-3xl px-4"
+        class="w-[90%] border h-14 flex items-center justify-between backdrop-blur-3xl absolute left-[50%] top-3 -translate-x-1/2 bg-[#ffffff1c] border-[#5142fc] z-10 rounded-3xl px-4"
       >
         <span class="bartle text-white text-[7px] md:text-[16px]"
           >Fresh Animation</span
@@ -54,7 +54,7 @@
       </nav>
       <!-------------------------------- bg fixed ------------------------->
       <div
-        class="w-full h-[100vh] overflow-x-hidden bg-[url(../images/bg.webp)] bg-cover fixed top-0 left-0"
+        class="w-full h-[100vh] overflow-x-hidden bg-[#14141f] fixed top-0 left-0"
       ></div>
       <!-------------------- first section ---------------------->
       <div class="w-full h-full relative">
@@ -74,44 +74,42 @@
         >
           <img
             class="arrowDown flex justify-center w-[80px] h-[80px] md:w-[100px] md:h-[100px] duration-700"
-            src="src/images/arrowDown.png"
+            src="src/images/icons8-arrow-down-100.png"
             alt=""
           />
         </figure>
 
         <div
-          class="w-[80%] h-[50px] border-t border-b border-t-white border-b-white mt-36 mx-auto flex justify-center items-center"
+          data-freshAnimation="fadeUp"
+          class="freshAnimation duration-700 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
         >
           <h5 class="poler text-xl">Fade</h5>
         </div>
         <!-- fade up section -->
         <div
           data-freshAnimation="fadeUp"
-          data-freshAnimationTime="500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
           >
             <img
               id="fadeUpBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[60px] h-[60px] cursor-pointer hover:scale-110 duration-500"
               src="src/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="fadeUpCode"
-            class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="fadeUp" data-freshAnimationTime="500"
-            class="freshAnimation"></div>
-          </xmp>
+            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
+  <div data-freshAnimation="fadeUp" class="freshAnimation duration-300"></div>
+</xmp>
         </div>
         <!-- fade down section -->
         <div
           data-freshAnimation="fadeDown"
-          data-freshAnimationTime="1000"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -126,15 +124,13 @@
           <xmp
             id="fadeDownCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="fadeDown" data-freshAnimationTime="1000"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="fadeDown" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- fade left section -->
         <div
           data-freshAnimation="fadeLeft"
-          data-freshAnimationTime="700"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -149,15 +145,13 @@
           <xmp
             id="fadeLeftCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="fadeLeft" data-freshAnimationTime="700"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="fadeLeft" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- fade right section -->
         <div
           data-freshAnimation="fadeRight"
-          data-freshAnimationTime="300"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -172,15 +166,13 @@
           <xmp
             id="fadeRightCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="fadeRight" data-freshAnimationTime="300"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="fadeRight" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- fade up left section -->
         <div
           data-freshAnimation="fadeUpLeft"
-          data-freshAnimationTime="1000"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -195,15 +187,13 @@
           <xmp
             id="fadeUpLeftCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="fadeUpLeft" data-freshAnimationTime="1000"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="fadeUpLeft" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- fade up right section -->
         <div
           data-freshAnimation="fadeUpRight"
-          data-freshAnimationTime="1000"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#6d6d6d00] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -218,21 +208,20 @@
           <xmp
             id="fadeUpRightCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="fadeUpRight" data-freshAnimationTime="1000"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="fadeUpRight" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- flip text -->
         <div
-          class="w-[80%] h-[50px] border-t border-b border-t-white border-b-white mt-36 mx-auto flex justify-center items-center"
+          data-freshAnimation="fadeUpRight"
+          class="freshAnimation duration-300 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
         >
           <h5 class="poler text-xl">Flip</h5>
         </div>
         <!-- flip left section -->
         <div
           data-freshAnimation="flipLeft"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -247,15 +236,13 @@
           <xmp
             id="flipLeftCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="flipLeft" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="flipLeft" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- flip right section -->
         <div
           data-freshAnimation="flipRight"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-300 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -270,15 +257,13 @@
           <xmp
             id="flipRightCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="flipRight" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="flipRight" class="freshAnimation duration-300"></div>
           </xmp>
         </div>
         <!-- flip up section -->
         <div
           data-freshAnimation="flipUp"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -293,15 +278,13 @@
           <xmp
             id="flipUpCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="flipUp" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="flipUp" class="freshAnimation duration-500"></div>
           </xmp>
         </div>
         <!-- flip Down section -->
         <div
           data-freshAnimation="flipDown"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -316,21 +299,20 @@
           <xmp
             id="flipDownCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="flipDown" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="flipDown" class="freshAnimation duration-500"></div>
           </xmp>
         </div>
         <!-- zoom -->
         <div
-          class="w-[80%] h-[50px] border-t border-b border-t-white border-b-white mt-36 mx-auto flex justify-center items-center"
+          data-freshAnimation="flipDown"
+          class="freshAnimation duration-700 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
         >
           <h5 class="poler text-xl">Zoom</h5>
         </div>
         <!-- zoom In section -->
         <div
           data-freshAnimation="zoomIn"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -345,15 +327,13 @@
           <xmp
             id="zoomInCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="zoomIn" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="zoomIn" class="freshAnimation duration-500"></div>
           </xmp>
         </div>
         <!-- zoomIn up section -->
         <div
           data-freshAnimation="zoomInUp"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -368,15 +348,13 @@
           <xmp
             id="zoomInUpCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="zoomInUp" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="zoomInUp" class="freshAnimation duration-500"></div>
           </xmp>
         </div>
         <!-- zoom In Down section -->
         <div
           data-freshAnimation="zoomInDown"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -391,15 +369,13 @@
           <xmp
             id="zoomInDownCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="zoomInDown" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="zoomInDown" class="freshAnimation duration-500"></div>
           </xmp>
         </div>
         <!-- zoom In right section -->
         <div
           data-freshAnimation="zoomInRight"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[10%] md:ml-[30%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -414,15 +390,13 @@
           <xmp
             id="zoomInRightCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="zoomInRight" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="zoomInRight" class="freshAnimation duration-500"></div>
           </xmp>
         </div>
         <!-- zoom In left section -->
         <div
           data-freshAnimation="zoomInLeft"
-          data-freshAnimationTime="1500"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation duration-500 w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff0] mt-44 ml-[5%] border border-[#c7c7c7c4] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
             class="w-full h-[25%] bg-white absolute bottom-0 left-0 flex justify-center items-center"
@@ -437,9 +411,128 @@
           <xmp
             id="zoomInLeftCode"
             class="text-[8px] md:text-[11px] lg:text-[15px] codeFont text-center text-blue-500 font-black">
-            <div data-freshAnimation="zoomInLeft" data-freshAnimationTime="1500"
-            class="freshAnimation"></div>
+            <div data-freshAnimation="zoomInLeft" class="freshAnimation duration-500"></div>
           </xmp>
+        </div>
+        <!-- custom -->
+        <div
+          data-freshAnimation="zoomInLeft"
+          class="freshAnimation duration-500 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
+        >
+          <h5 class="poler text-xl">Custom</h5>
+        </div>
+        <!-- fade up custom duration section -->
+        <div class="flex flex-wrap justify-around w-full">
+          <div
+            data-freshAnimation="fadeUp"
+            class="freshAnimation duration-2000 w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          >
+            <div
+              class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            >
+              <img
+                id="fadeUpBtn"
+                class="w-[60px] h-[60px] cursor-pointer hover:scale-110 duration-500"
+                src="src/images/copy.png"
+                alt=""
+              />
+            </div>
+            <xmp
+              id="fadeUpCode"
+              class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
+  <div data-freshAnimation="fadeUp" class="freshAnimation duration-2000"></div>
+</xmp>
+          </div>
+          <!-- caption -->
+          <div
+            data-freshAnimation="fadeUp"
+            class="freshAnimation duration-2000 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center"
+          >
+            <h2 class="text-[#5142fc] text-center poler">duration</h2>
+            <p class="text-white text-justify poler mt-5">
+              You Can custom timing animation with duration tailwind class for
+              example duration-1000 or duration-3000
+            </p>
+          </div>
+        </div>
+
+        <!-- fade up custom timinf unction section -->
+        <div class="flex flex-wrap justify-around w-full">
+          <div
+            data-freshAnimation="fadeUp"
+            class="freshAnimation duration-2000 ease-in-out w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          >
+            <div
+              class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            >
+              <img
+                id="fadeUpBtn"
+                class="w-[60px] h-[60px] cursor-pointer hover:scale-110 duration-500"
+                src="src/images/copy.png"
+                alt=""
+              />
+            </div>
+            <xmp
+              id="fadeUpCode"
+              class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
+  <div data-freshAnimation="fadeUp" 
+  class="freshAnimation duration-2000 ease-in-out"></div>
+</xmp>
+          </div>
+          <!-- caption -->
+          <div
+            data-freshAnimation="fadeUp"
+            class="freshAnimation duration-2000 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center"
+          >
+            <h2 class="text-[#5142fc] text-center poler capitalize">
+              transitin Timing Function
+            </h2>
+            <p class="text-white text-justify poler mt-5 capitalize">
+              You can customize transition timing function utilities for
+              controlling the easing of CSS transitions, such as ease-linear,
+              ease-in, ease-out, ease-in-out, and ease-initial.
+            </p>
+          </div>
+        </div>
+
+        <!-- fade up custom transition delay section -->
+        <div class="flex flex-wrap justify-around w-full">
+          <div
+            data-freshAnimation="fadeUp"
+            class="freshAnimation duration-2000 ease-in-out delay-500 w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          >
+            <div
+              class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            >
+              <img
+                id="fadeUpBtn"
+                class="w-[60px] h-[60px] cursor-pointer hover:scale-110 duration-500"
+                src="src/images/copy.png"
+                alt=""
+              />
+            </div>
+            <xmp
+              id="fadeUpCode"
+              class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
+  <div data-freshAnimation="fadeUp" 
+  class="freshAnimation duration-2000 delay-500 ease-in-out"></div>
+</xmp>
+          </div>
+          <!-- caption -->
+          <div
+            data-freshAnimation="fadeUp"
+            class="freshAnimation duration-2000 delay-500 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center"
+          >
+            <h2 class="text-[#5142fc] text-center poler capitalize">
+              transitin delay
+            </h2>
+            <p class="text-white text-justify poler mt-5 capitalize">
+              You can customize transition delay utilities for controlling the
+              delay before a CSS transition starts, such as delay-75, delay-100,
+              delay-150, delay-200, delay-300, delay-500, or delay-700, using
+              values in seconds or milliseconds.
+            </p>
+          </div>
         </div>
       </div>
     </main>

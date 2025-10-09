@@ -3,10 +3,10 @@ let selectDiv = document.querySelectorAll(".freshAnimation");
 
 selectDiv.forEach((val) => {
   let classAnimation = val.getAttribute("data-freshAnimation");
-  let timeAnimation = val.getAttribute("data-freshAnimationTime") / 1000;
+  // let timeAnimation = val.getAttribute("data-freshAnimationTime") / 300;
 
   val.classList.add(classAnimation);
-  val.style.transition = `all ${timeAnimation}s ease`;
+  // val.style.transition = `all ${timeAnimation}s ease`;
   val.setAttribute("data-top", val.offsetTop);
 
   window.addEventListener("scroll", () => {

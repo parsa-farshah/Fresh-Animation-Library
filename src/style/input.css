@@ -19,10 +19,10 @@
 @layer utilities {
   /* fades */
   .fadeUp {
-    @apply opacity-0 translate-y-[100%];
+    @apply opacity-0 translate-y-[100%] invisible;
   }
   .fadeDown {
-    @apply opacity-0 -translate-y-[100%];
+    @apply opacity-0 -translate-y-[100%] invisible;
   }
   .fadeLeft {
     @apply opacity-0 -translate-x-[100%];

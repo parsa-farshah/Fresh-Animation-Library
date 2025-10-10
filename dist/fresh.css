@@ -1,57 +1,85 @@
 @layer utilities {
   /* fades */
   .fadeUp {
-    @apply opacity-0 translate-y-[100%] invisible;
+    opacity: 0;
+    transform: translateY(100%);
+    visibility: hidden;
   }
+
   .fadeDown {
-    @apply opacity-0 -translate-y-[100%] invisible;
+    opacity: 0;
+    transform: translateY(-100%);
+    visibility: hidden;
   }
+
   .fadeLeft {
-    @apply opacity-0 -translate-x-[100%];
+    opacity: 0;
+    transform: translateX(-100%);
   }
+
   .fadeRight {
-    @apply opacity-0 translate-x-[100%];
+    opacity: 0;
+    transform: translateX(100%);
   }
+
   .fadeUpLeft {
-    @apply opacity-0 -translate-x-[100%] -translate-y-[100%];
+    opacity: 0;
+    transform: translate(-100%, -100%);
   }
+
   .fadeUpRight {
-    @apply opacity-0 translate-x-[100%] -translate-y-[100%];
+    opacity: 0;
+    transform: translate(100%, -100%);
   }
-  /* flip */
+
+  /* flips */
   .flipLeft {
-    @apply rotate-y-90 origin-center;
+    transform: rotateY(90deg) ;
+    transform-origin: center;
+    
   }
 
   .flipRight {
-    @apply -rotate-y-90 origin-center;
+    transform: rotateY(-90deg);
+    transform-origin: center;
   }
 
   .flipUp {
-    @apply -rotate-x-90 origin-center transform-3d;
+    transform: rotateX(-90deg);
+    transform-origin: center;
+    transform-style: preserve-3d;
   }
 
   .flipDown {
-    @apply rotate-x-90 origin-center transform-3d;
+    transform: rotateX(90deg);
+    transform-origin: center;
+    transform-style: preserve-3d;
   }
 
   /* zooms */
-
   .zoomIn {
-    @apply scale-0 opacity-0;
+    transform: scale(0);
+    opacity: 0;
   }
 
   .zoomInUp {
-    @apply scale-0 opacity-0 translate-y-[100%];
+    transform: scale(0) translateY(100%);
+    opacity: 0;
   }
+
   .zoomInDown {
-    @apply scale-0 opacity-0 -translate-y-[100%];
+    transform: scale(0) translateY(-100%);
+    opacity: 0;
   }
-  
+
   .zoomInRight {
-    @apply scale-0 opacity-0 translate-x-[100%];
+    transform: scale(0) translateX(100%);
+    opacity: 0;
   }
+
   .zoomInLeft {
-    @apply scale-0 opacity-0 -translate-x-[100%];
+    transform: scale(0) translateX(-100%);
+    opacity: 0;
   }
 }
+

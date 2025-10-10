@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fresh Animation</title>
     <link rel="stylesheet" href="docs/style/output.css" />
+    <link rel="stylesheet" href="manifest.json" />
+    <link
+      rel="shortcut icon"
+      href="docs/images/freshAnimation.png"
+      type="image/x-icon"
+    />
   </head>
   <body class="overflow-x-hidden text-white">
     <main class="w-full flex flex-wrap overflow-hidden">
@@ -12,36 +18,57 @@
       <nav
         class="w-[90%] border h-14 flex items-center justify-between backdrop-blur-3xl absolute left-[50%] top-3 -translate-x-1/2 bg-[#ffffff1c] border-[#5142fc] z-10 rounded-3xl px-4"
       >
-        <span class="bartle text-white text-[7px] md:text-[16px]"
-          >Fresh Animation</span
-        >
+        <img
+          class="w-[120px] h-[120px] object-cover"
+          src="docs/images/freshAnimation.png"
+          alt=""
+        />
         <ul class="gap-8 justify-center hidden md:flex">
           <li>
-            <a href="#" class="poler text-white capitalize hover:text-gray-400"
+            <a
+              href="#social"
+              class="poler text-white capitalize hover:text-gray-400"
               >contact me</a
             >
           </li>
           <li>
-            <a href="#" class="poler text-white capitalize hover:text-gray-400"
-              >how To install</a
+            <a
+              href="#anim"
+              class="poler text-white capitalize hover:text-gray-400"
+              >animations</a
             >
           </li>
           <li>
-            <a href="#" class="poler text-white capitalize hover:text-gray-400"
+            <a
+              href="#cdn"
+              class="poler text-white capitalize hover:text-gray-400"
               >Cdn</a
             >
           </li>
           <li>
-            <a href="#" class="poler text-white capitalize hover:text-gray-400"
+            <a
+              href="#npm"
+              class="poler text-white capitalize hover:text-gray-400"
               >npm</a
             >
           </li>
         </ul>
         <!-- github -->
-        <div>
-          <h2 class="poler text-white capitalize text-[12px] md:text-[16px]">
-            prsa-farshah
-          </h2>
+        <div class="bg-black px-4 py-2 rounded-2xl">
+          <a
+            class="flex items-center justify-between gap-3"
+            target="_blank"
+            href="http://github.com/parsa-farshah"
+          >
+            <img
+              class="w-[30px] h-[30px]"
+              src="docs/images/github.png"
+              alt=""
+            />
+            <h2 class="poler text-white capitalize text-[12px] md:text-[14px]">
+              prsa-farshah
+            </h2>
+          </a>
         </div>
       </nav>
       <!-------------------------------- bg fixed ------------------------->
@@ -72,6 +99,7 @@
         </figure>
 
         <div
+          id="anim"
           data-freshAnimation="fadeUp"
           class="freshAnimation duration-700 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
         >
@@ -553,23 +581,20 @@
         </div>
       </div>
       <!-------------------------- footer ------------------------->
-      <footer class="w-full h-full bg-[#242438] relative mt-36 py-10 px-3  md:px-[10%]">
+      <footer
+        class="w-full h-full bg-[#242438] relative mt-36 py-10 px-3 md:px-[10%]"
+      >
         <div class="w-full">
           <h5 class="poler text-2xl">Get It</h5>
           <div class="mt-8 flex gap-6">
-            <a
+            <a target="_blank"
               class="h-[40px] capitalize rounded-2xl border border-[#5142fc] hover:border-white hover:bg-white hover:text-[#5142fc] px-5 py-2 poler"
-              href=""
-              >download</a
-            >
-            <a
-              class="h-[40px] capitalize rounded-2xl border border-[#5142fc] hover:border-white hover:bg-white hover:text-[#5142fc] px-5 py-2 poler"
-              href=""
+              href="https://github.com/parsa-farshah/Fresh-Animation-Library"
               >view on github</a
             >
           </div>
           <!-- using npm -->
-          <div class="mt-12">
+          <div id="npm" class="mt-20">
             <h5 class="poler text-2xl">using npm</h5>
             <div
               class="w-[97%] md:w-[90%] h-[60px] border flex items-center mt-10 px-1 md:px-10 bg-[#fff1]"
@@ -601,7 +626,7 @@
             </div>
           </div>
           <!-- cdn -->
-          <div class="mt-12">
+          <div id="cdn" class="mt-20">
             <h5 class="poler text-2xl">Cdn</h5>
             <h5 class="poler text-2xl mt-8">css</h5>
             <div
@@ -624,10 +649,64 @@
 </xmp>
             </div>
           </div>
+          <!-- my social -->
+          <div
+            id="social"
+            class="w-[300px] h-[400px] bg-[#fff1] rounded-xl mt-32 mx-auto overflow-hidden"
+          >
+            <figure class="w-full h-[65%] rounded-b-2xl overflow-hidden">
+              <img
+                class="w-full h-full object-cover object-top"
+                src="docs/images/parsa3.jpg"
+                alt=""
+              />
+            </figure>
+            <h5 class="text-center poler mt-4">Parsa Dehghan Pour</h5>
+            <h5 class="text-center poler mt-2 text-sm text-[#ffffffa6]">
+              Front End Developer
+            </h5>
+            <!-- socials link -->
+            <ul class="flex w-full mt-3 justify-around pointer-events-auto">
+              <li>
+                <a href="http://github.com/parsa-farshah" target="_blank">
+                  <img
+                    class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                    src="docs/images/github.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                    src="docs/images/instagram.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250"
+                  target="_blank"
+                >
+                  <img
+                    class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                    src="docs/images/linkedin.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </footer>
     </main>
   </body>
   <script src="docs/js/index.js"></script>
   <script src="docs/js/main.js"></script>
+  <script src="app.js"></script>
 </html>

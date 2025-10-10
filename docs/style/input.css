@@ -16,6 +16,10 @@
   src: url(../fonts/FiraCode-VariableFont_wght.ttf);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   /* fades */
   /* fades */

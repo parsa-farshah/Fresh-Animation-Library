@@ -16,64 +16,67 @@
     <main class="w-full flex flex-wrap overflow-hidden">
       <!-------------------------------- navbar -------------------------->
       <nav
-        class="w-[90%] border h-14 flex items-center justify-between backdrop-blur-3xl absolute left-[50%] top-3 -translate-x-1/2 bg-[#ffffff1c] border-[#5142fc] z-10 rounded-3xl px-4"
+        class="w-[90%] h-14 flex items-center justify-between absolute left-1/2 top-3 -translate-x-1/2 backdrop-blur-2xl bg-[#ffffff0a] border border-[#2a2a3d] rounded-2xl px-5 z-50 shadow-[0_4px_20px_#00000040] transition-all duration-300 hover:shadow-[0_6px_25px_#00000070]"
       >
+        <!-- لوگو -->
         <img
-          class="w-[120px] h-[120px] object-cover"
+          class="w-[100px] h-[100px] object-contain"
           src="docs/images/freshAnimation.png"
-          alt=""
+          alt="Fresh Animation Logo"
         />
-        <ul class="gap-8 justify-center hidden md:flex">
+
+        <!-- لینک‌ها -->
+        <ul class="hidden md:flex gap-8">
           <li>
             <a
               href="#social"
-              class="poler text-white capitalize hover:text-gray-400"
-              >contact me</a
+              class="poler text-gray-200 hover:text-white transition"
+              >contact</a
             >
           </li>
           <li>
             <a
               href="#anim"
-              class="poler text-white capitalize hover:text-gray-400"
+              class="poler text-gray-200 hover:text-white transition"
               >animations</a
             >
           </li>
           <li>
             <a
               href="#cdn"
-              class="poler text-white capitalize hover:text-gray-400"
-              >Cdn</a
+              class="poler text-gray-200 hover:text-white transition"
+              >cdn</a
             >
           </li>
           <li>
             <a
               href="#npm"
-              class="poler text-white capitalize hover:text-gray-400"
+              class="poler text-gray-200 hover:text-white transition"
               >npm</a
             >
           </li>
         </ul>
-        <!-- github -->
-        <div class="bg-black px-4 py-2 rounded-2xl">
-          <a
-            class="flex items-center justify-between gap-3"
-            target="_blank"
-            href="http://github.com/parsa-farshah"
+
+        <!-- GitHub -->
+        <a
+          href="https://github.com/parsa-farshah"
+          target="_blank"
+          class="flex items-center gap-2 px-3 py-2 rounded-xl bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] hover:scale-[1.05] transition-all duration-300"
+        >
+          <img
+            src="docs/images/github.png"
+            class="w-[24px] h-[24px]"
+            alt="GitHub"
+          />
+          <span class="text-white text-[13px] md:text-[14px] font-semibold"
+            >parsa-farshah</span
           >
-            <img
-              class="w-[30px] h-[30px]"
-              src="docs/images/github.png"
-              alt=""
-            />
-            <h2 class="poler text-white capitalize text-[12px] md:text-[14px]">
-              prsa-farshah
-            </h2>
-          </a>
-        </div>
+        </a>
       </nav>
+
       <!-------------------------------- bg fixed ------------------------->
       <div
-        class="w-full h-[100vh] overflow-x-hidden bg-[#14141f] fixed top-0 left-0"
+        class="w-full h-[100vh] overflow-x-hidden bg-gradient-to-b from-[#0a0a0f] via-[#11111a] to-[#000000] fixed top-0 left-0"
       ></div>
       <!-------------------- first section ---------------------->
       <div class="w-full h-full relative">
@@ -101,359 +104,333 @@
         <div
           id="anim"
           data-freshAnimation="fadeUp"
-          class="freshAnimation duration-700 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
+          class="freshAnimation duration-700 w-[90%] h-[50px] bg-[#ffffff0a] border border-[#2a2a3d] mt-36 mx-auto flex justify-center items-center"
         >
           <h5 class="poler text-xl">Fade</h5>
         </div>
         <!-------------------------------------- fade up section ------------------>
         <div
           data-freshAnimation="fadeUp"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-2xl backdrop-blur-xl bg-[#ffffff08] border border-[#2f2f3a] mt-44 ml-[5%] flex items-center justify-center relative overflow-hidden"
         >
+          <!-- نوار پایین -->
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="fadeUpBtn"
-              class="w-[60px] h-[60px] cursor-pointer hover:scale-110"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
-              alt=""
+              alt="Copy"
             />
           </div>
+
+          <!-- کد -->
           <xmp
             id="fadeUpCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
-  <div data-freshAnimation="fadeUp" 
-  class="freshAnimation"></div>
-</xmp>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeUp" class="freshAnimation"></div>
+  </xmp>
         </div>
+
         <!--------------------------------- fade down section --------------------->
         <div
           data-freshAnimation="fadeDown"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl mt-44 ml-[10%] md:ml-[30%] bg-[#ffffff08] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="fadeDownBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="fadeDownCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="fadeDown" 
-            class="freshAnimation">
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeDown" class="freshAnimation">
     </div>
 </xmp>
         </div>
         <!--------------------------- fade left section ------------------------>
         <div
           data-freshAnimation="fadeLeft"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="fadeLeftBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="fadeLeftCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="fadeLeft" 
-            class="freshAnimation"></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeLeft" class="freshAnimation"></div>
           </xmp>
         </div>
         <!-- fade right section -->
         <div
           data-freshAnimation="fadeRight"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="fadeRightBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="fadeRightCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="fadeRight" 
-            class="freshAnimation"></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeRight" class="freshAnimation"></div>
           </xmp>
         </div>
         <!-- fade up left section -->
         <div
           data-freshAnimation="fadeUpLeft"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="fadeUpLeftBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="fadeUpLeftCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="fadeUpLeft" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeUpLeft" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- fade up right section -->
         <div
           data-freshAnimation="fadeUpRight"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="fadeUpRightBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="fadeUpRightCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="fadeUpRight" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeUpRight" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- flip text -->
         <div
           data-freshAnimation="fadeUpRight"
-          class="freshAnimation w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
+          class="freshAnimation w-[90%] h-[50px] bg-[#ffffff0a] border border-[#2a2a3d] mt-36 mx-auto flex justify-center items-center"
         >
           <h5 class="poler text-xl">Flip</h5>
         </div>
         <!-- flip left section -->
         <div
           data-freshAnimation="flipLeft"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="flipLeftBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="flipLeftCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="flipLeft" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="flipLeft" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- flip right section -->
         <div
           data-freshAnimation="flipRight"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="flipRightBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="flipRightCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="flipRight" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="flipRight" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- flip up section -->
         <div
           data-freshAnimation="flipUp"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="flipUpBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="flipUpCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="flipUp" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="flipUp" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- flip Down section -->
         <div
           data-freshAnimation="flipDown"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="flipDownBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="flipDownCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="flipDown" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="flipDown" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- zoom -->
         <div
           data-freshAnimation="flipDown"
-          class="freshAnimation duration-700 w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
+          class="freshAnimation duration-700 w-[90%] h-[50px] bg-[#ffffff0a] border border-[#2a2a3d] mt-36 mx-auto flex justify-center items-center"
         >
           <h5 class="poler text-xl">Zoom</h5>
         </div>
         <!-- zoom In section -->
         <div
           data-freshAnimation="zoomIn"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="zoomInBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="zoomInCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="zoomIn" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="zoomIn" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- zoomIn up section -->
         <div
           data-freshAnimation="zoomInUp"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="zoomInUpBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="zoomInUpCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="zoomInUp" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="zoomInUp" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- zoom In Down section -->
         <div
           data-freshAnimation="zoomInDown"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="zoomInDownBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="zoomInDownCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="zoomInDown" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="zoomInDown" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- zoom In right section -->
         <div
           data-freshAnimation="zoomInRight"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[10%] md:ml-[30%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="zoomInRightBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="zoomInRightCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="zoomInRight" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="zoomInRight" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- zoom In left section -->
         <div
           data-freshAnimation="zoomInLeft"
-          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden perspective-midrange"
+          class="freshAnimation w-[85%] md:w-[65%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden perspective-midrange"
         >
           <div
-            class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+            class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
           >
             <img
               id="zoomInLeftBtn"
-              class="w-[60px] h-[60px] cursor-pointer"
+              class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300"
               src="docs/images/copy.png"
               alt=""
             />
           </div>
           <xmp
             id="zoomInLeftCode"
-            class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full mr-[10%]">
-            <div data-freshAnimation="zoomInLeft" 
-            class="freshAnimation "></div>
+            class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="zoomInLeft" class="freshAnimation "></div>
           </xmp>
         </div>
         <!-- custom -->
         <div
           data-freshAnimation="zoomInLeft"
-          class="freshAnimation w-[90%] h-[50px] border-t border-b border-t-[#5142fc] border-b-[#5142fc] mt-36 mx-auto flex justify-center items-center bg-gradient-to-r from-[#5142fc] to-[#78268d]"
+          class="freshAnimation w-[90%] h-[50px] bg-[#ffffff0a] border border-[#2a2a3d] mt-36 mx-auto flex justify-center items-center"
         >
           <h5 class="poler text-xl">Custom</h5>
         </div>
@@ -462,34 +439,41 @@
           <div
             data-freshAnimation="fadeUp"
             data-time="1500"
-            class="freshAnimation w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+            class="freshAnimation w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44  border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
           >
             <div
-              class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+              class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
             >
               <img
                 id="fadeUpCustomDurationBtn"
-                class="w-[60px] h-[60px] cursor-pointer hover:scale-110"
+                class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300 hover:scale-110"
                 src="docs/images/copy.png"
                 alt=""
               />
             </div>
             <xmp
-              id="fadeUpCustomDurationCode"
-              class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
-  <div data-freshAnimation="fadeUp"
-   data-time="1500" class="freshAnimation"></div>
+              id="fadeUp"
+              class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeUp" data-time="1500" 
+  class="freshAnimation"></div>
 </xmp>
           </div>
           <!-- caption -->
           <div
             data-freshAnimation="fadeUp"
-            class="freshAnimation duration-2000 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center"
+            class="freshAnimation duration-2000 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center bg-[#1f1f2f]/70 backdrop-blur-lg border border-[#5142fc]/50 shadow-[0_10px_30px_rgba(81,66,252,0.5)] hover:shadow-[0_15px_40px_rgba(81,66,252,0.8)] transition-all duration-500"
           >
-            <h2 class="text-[#5142fc] text-center poler">duration</h2>
-            <p class="text-white text-justify poler mt-5">
-              You Can custom timing animation with duration tailwind class for
-              example duration-1000 or 0
+            <h2
+              class="text-white text-center poler font-bold text-2xl md:text-3xl drop-shadow-lg"
+            >
+              Duration
+            </h2>
+            <p
+              class="text-white text-justify poler mt-5 text-sm md:text-base drop-shadow-md"
+            >
+              You can customize the timing animation with Tailwind duration
+              classes, for example
+              <span class="font-semibold text-yellow-300">duration-1000</span>
+              or <span class="font-semibold text-yellow-300">duration-0</span>.
             </p>
           </div>
         </div>
@@ -500,35 +484,37 @@
             data-freshAnimation="fadeUp"
             data-time="1500"
             data-timingFunction="ease-in"
-            class="freshAnimation duration-2000 ease-in-out w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+            class="freshAnimation duration-2000 ease-in-out w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
           >
             <div
-              class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+              class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
             >
               <img
                 id="fadeUpCustomTimingBtn"
-                class="w-[60px] h-[60px] cursor-pointer hover:scale-110"
+                class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300 hover:scale-110"
                 src="docs/images/copy.png"
                 alt=""
               />
             </div>
             <xmp
-              id="fadeUpCustomTimingCode"
-              class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
-  <div data-freshAnimation="fadeUp" data-time="1500"
-      data-timingFunction="ease-in"
-  class="freshAnimation"></div>
+              id="fadeUp"
+              class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div data-freshAnimation="fadeUp" data-time="1500" 
+    data-timingFunction="ease-in" class="freshAnimation"></div>
 </xmp>
           </div>
           <!-- caption -->
           <div
             data-freshAnimation="fadeUp"
-            class="freshAnimation duration-2000 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center"
+            class="freshAnimation duration-2000 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center bg-[#1f1f2f]/70 backdrop-blur-lg border border-[#5142fc]/50 shadow-[0_10px_30px_rgba(81,66,252,0.5)] hover:shadow-[0_15px_40px_rgba(81,66,252,0.8)] transition-all duration-500"
           >
-            <h2 class="text-[#5142fc] text-center poler capitalize">
+            <h2
+              class="text-[#ffdd57] text-center poler capitalize drop-shadow-md"
+            >
               transition Timing Function
             </h2>
-            <p class="text-white text-justify poler mt-5 capitalize">
+            <p
+              class="text-white text-justify poler mt-5 capitalize drop-shadow-sm"
+            >
               You can customize transition timing function utilities for
               controlling the easing of CSS transitions, such as ease-linear,
               ease-in, ease-out, ease-in-out, and ease-initial.
@@ -543,35 +529,37 @@
             data-time="1500"
             data-timingFunction="ease-in"
             data-delay="500"
-            class="freshAnimation w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 ml-[5%] border border-[#5142fc] flex items-center justify-center relative overflow-hidden"
+            class="freshAnimation w-[85%] md:w-[55%] h-[300px] rounded-xl backdrop-blur-3xl bg-[#fff1] mt-44 border border-[#2f2f3a] flex items-center justify-center relative overflow-hidden"
           >
             <div
-              class="w-full h-[25%] bg-gradient-to-r from-[#5142fc] to-[#78268d] absolute bottom-0 left-0 flex justify-center items-center"
+              class="w-full h-[25%] bg-gradient-to-r from-[#2d2dff] to-[#7f52ff] absolute bottom-0 left-0 flex justify-center items-center border-t border-[#3b3b3b]"
             >
               <img
                 id="fadeUpCustomDelayBtn"
-                class="w-[60px] h-[60px] cursor-pointer hover:scale-110"
+                class="w-[50px] h-[50px] cursor-pointer hover:scale-110 transition-all duration-300 hover:scale-110"
                 src="docs/images/copy.png"
                 alt=""
               />
             </div>
             <xmp
               id="fadeUp"
-              class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-blue-500 font-black text-center w-full h-full">
-  <div  data-freshAnimation="fadeUp" data-time="1500"
-    data-timingFunction="ease-in" data-delay="500"
-  class="freshAnimation"></div>
+              class="flex items-center justify-center text-[9px] md:text-[12px] lg:text-[16px] codeFont text-[#d0d0d0] font-semibold text-center w-full h-full leading-relaxed tracking-wide"><div  data-freshAnimation="fadeUp" data-time="1500" data-timingFunction=
+      "ease-in" data-delay="500" class="freshAnimation"></div>
 </xmp>
           </div>
           <!-- caption -->
           <div
             data-freshAnimation="fadeUp"
-            class="freshAnimation duration-2000 delay-500 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center"
+            class="freshAnimation duration-2000 delay-500 w-[90%] md:w-[25%] h-[300px] mt-[30px] md:mt-[180px] rounded-xl p-4 flex flex-col justify-center items-center bg-[#1f1f2f]/70 backdrop-blur-lg border border-[#5142fc]/50 shadow-[0_10px_30px_rgba(81,66,252,0.5)] hover:shadow-[0_15px_40px_rgba(81,66,252,0.8)] transition-all duration-500"
           >
-            <h2 class="text-[#5142fc] text-center poler capitalize">
-              transitin delay
+            <h2
+              class="text-[#ffdd57] text-center poler capitalize drop-shadow-md"
+            >
+              transition delay
             </h2>
-            <p class="text-white text-justify poler mt-5 capitalize">
+            <p
+              class="text-white text-justify poler mt-5 capitalize drop-shadow-sm"
+            >
               You can customize transition delay utilities for controlling the
               delay before a CSS transition starts, such as delay-75, delay-100,
               delay-150, delay-200, delay-300, delay-500, or delay-700, using
@@ -581,110 +569,116 @@
         </div>
       </div>
       <!-------------------------- footer ------------------------->
-      <footer
-        class="w-full h-full bg-[#242438] relative mt-36 py-10 px-3 md:px-[10%]"
-      >
-        <div class="w-full">
-          <h5 class="poler text-2xl">Get It</h5>
-          <div class="mt-8 flex gap-6">
-            <a target="_blank"
-              class="h-[40px] capitalize rounded-2xl border border-[#5142fc] hover:border-white hover:bg-white hover:text-[#5142fc] px-5 py-2 poler"
-              href="https://github.com/parsa-farshah/Fresh-Animation-Library"
-              >view on github</a
-            >
+      <footer class="w-full bg-[#242438] relative mt-36 py-16 px-5 md:px-[10%]">
+        <div class="max-w-[1200px] mx-auto">
+          <!-- Get It Section -->
+          <div class="text-center">
+            <h5 class="poler text-3xl md:text-4xl text-white font-bold">
+              Get It
+            </h5>
+            <p class="text-gray-300 mt-2">Copy the CDN or install with npm</p>
+            <div class="mt-8 flex justify-center gap-6 flex-wrap">
+              <a
+                href="https://github.com/parsa-farshah/Fresh-Animation-Library"
+                target="_blank"
+                class="h-[50px] capitalize rounded-2xl border border-[#2f2f3a] hover:border-white hover:bg-white hover:text-[#5142fc] px-6 py-3 poler font-semibold transition-all duration-300 shadow-md hover:shadow-xl"
+              >
+                View on GitHub
+              </a>
+            </div>
           </div>
-          <!-- using npm -->
+
+          <!-- NPM Section -->
           <div id="npm" class="mt-20">
-            <h5 class="poler text-2xl">using npm</h5>
+            <h5 class="poler text-2xl text-white font-semibold">Using NPM</h5>
             <div
-              class="w-[97%] md:w-[90%] h-[60px] border flex items-center mt-10 px-1 md:px-10 bg-[#fff1]"
+              class="w-full md:w-[90%] h-[60px] border border-[#2f2f3a] flex items-center mt-6 px-4 bg-gradient-to-r from-[#5142fc33] to-[#78268d33] rounded-xl"
             >
-              <h4 class="codeFont">npm i fresh-animation</h4>
-            </div>
-            <!-- link css -->
-
-            <div
-              class="w-[97%] md:w-[90%] h-[60px] border flex items-center justify-center mt-10 px-1 md:px-10 bg-[#fff1]"
-            >
-              <xmp
-                id="fadeUpCustomDelayCode"
-                class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-white font-black w-full h-full mb-4">
-    <link rel="stylesheet" href="node_modules/fresh-animation/dist/fresh.min.css"/>
-</xmp>
+              <h4 class="codeFont text-white font-semibold">
+                npm i fresh-animation
+              </h4>
             </div>
 
-            <!-- link js -->
-
+            <!-- Link CSS -->
             <div
-              class="w-[97%] md:w-[90%] h-[60px] border flex items-center justify-center mt-10 px-1 md:px-10 bg-[#fff1]"
+              class="w-full md:w-[90%] h-[60px] border flex items-center justify-center mt-6 px-4 bg-gradient-to-r from-[#5142fc33] to-[#78268d33] rounded-xl"
             >
-              <xmp
-                id="fadeUpCustomDelayCode"
-                class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-white font-black w-full h-full mb-4">
-      <script src="node_modules/fresh-animation/dist/fresh.min.js"></script>
-</xmp>
+              <xmp class="text-white codeFont text-[8px] md:text-[11px] lg:text-[14px] font-bold">
+<link rel="stylesheet" href="node_modules/fresh-animation/dist/fresh.min.css"/>
+        </xmp>
+            </div>
+
+            <!-- Link JS -->
+            <div
+              class="w-full md:w-[90%] h-[60px] border flex items-center justify-center mt-6 px-4 bg-gradient-to-r from-[#5142fc33] to-[#78268d33] rounded-xl"
+            >
+              <xmp class="text-white codeFont text-[8px] md:text-[11px] lg:text-[14px] font-bold">
+<script src="node_modules/fresh-animation/dist/fresh.min.js"></script>
+        </xmp>
             </div>
           </div>
-          <!-- cdn -->
+
+          <!-- CDN Section -->
           <div id="cdn" class="mt-20">
-            <h5 class="poler text-2xl">Cdn</h5>
-            <h5 class="poler text-2xl mt-8">css</h5>
+            <h5 class="poler text-2xl text-white font-semibold">CDN</h5>
+
+            <h6 class="poler text-xl text-gray-200 mt-6">CSS</h6>
             <div
-              class="w-[97%] md:w-[90%] h-[60px] border flex items-center mt-4 px-1 md:px-10 bg-[#fff1]"
+              class="w-full md:w-[90%] h-[60px] border flex items-center px-4 bg-gradient-to-r from-[#5142fc33] to-[#78268d33] rounded-xl mt-4"
             >
-              <xmp
-                id="fadeUpCustomDelayCode"
-                class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-white font-black w-full h-full mb-4">
-      <link rel="stylesheet" href="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.css">
-</xmp>
+              <xmp class="text-white codeFont text-[6px] md:text-[9px] lg:text-[14px] font-bold">
+<link rel="stylesheet" href="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.css">
+        </xmp>
             </div>
-            <h5 class="poler text-2xl mt-8">js</h5>
+
+            <h6 class="poler text-xl text-gray-200 mt-6">JS</h6>
             <div
-              class="w-[97%] md:w-[90%] h-[60px] border flex items-center mt-4 px-1 md:px-10 bg-[#fff1]"
+              class="w-full md:w-[90%] h-[60px] border flex items-center px-4 bg-gradient-to-r from-[#5142fc33] to-[#78268d33] rounded-xl mt-4"
             >
-              <xmp
-                id="fadeUpCustomDelayCode"
-                class="flex items-center justify-center text-[8px] md:text-[11px] lg:text-[15px] codeFont text-white font-black w-full h-full mb-4">
+              <xmp class="text-white codeFont text-[8px] md:text-[11px] lg:text-[14px] font-bold">
 <script src="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.js"></script>
-</xmp>
+        </xmp>
             </div>
           </div>
-          <!-- my social -->
+
+          <!-- Social Card -->
           <div
             id="social"
-            class="w-[300px] h-[400px] bg-[#fff1] rounded-xl mt-32 mx-auto overflow-hidden"
+            class="w-[320px] md:w-[400px] mx-auto mt-28 rounded-2xl bg-gradient-to-br from-[#5142fc33] to-[#78268d33] backdrop-blur-lg shadow-2xl overflow-hidden hover:scale-[1.03] transition-all duration-500"
           >
-            <figure class="w-full h-[65%] rounded-b-2xl overflow-hidden">
+            <figure class="w-full h-[65%] overflow-hidden rounded-b-2xl">
               <img
                 class="w-full h-full object-cover object-top"
                 src="docs/images/parsa3.jpg"
-                alt=""
+                alt="Parsa Dehghan Pour"
               />
             </figure>
-            <h5 class="text-center poler mt-4">Parsa Dehghan Pour</h5>
-            <h5 class="text-center poler mt-2 text-sm text-[#ffffffa6]">
-              Front End Developer
-            </h5>
-            <!-- socials link -->
-            <ul class="flex w-full mt-3 justify-around pointer-events-auto">
+            <div class="text-center py-4">
+              <h5 class="text-white poler text-xl md:text-2xl font-semibold">
+                Parsa Dehghan Pour
+              </h5>
+              <p class="text-[#ffffffa6] mt-1 text-sm">Front End Developer</p>
+            </div>
+            <!-- Social Links -->
+            <ul class="flex justify-around py-4">
               <li>
                 <a href="http://github.com/parsa-farshah" target="_blank">
                   <img
-                    class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                    class="w-[45px] h-[45px] hover:scale-125 transition-all duration-500"
                     src="docs/images/github.png"
-                    alt=""
+                    alt="GitHub"
                   />
                 </a>
               </li>
               <li>
                 <a
-                  href="https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp"
+                  href="https://www.instagram.com/parsa_dehghanpour_dv"
                   target="_blank"
                 >
                   <img
-                    class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                    class="w-[45px] h-[45px] hover:scale-125 transition-all duration-500"
                     src="docs/images/instagram.png"
-                    alt=""
+                    alt="Instagram"
                   />
                 </a>
               </li>
@@ -694,14 +688,18 @@
                   target="_blank"
                 >
                   <img
-                    class="w-[40px] h-[40px] hover:scale-150 duration-700"
+                    class="w-[45px] h-[45px] hover:scale-125 transition-all duration-500"
                     src="docs/images/linkedin.png"
-                    alt=""
+                    alt="LinkedIn"
                   />
                 </a>
               </li>
             </ul>
           </div>
+
+          <p class="text-gray-400 text-center mt-16">
+            © 2025 Fresh Animation Library. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>

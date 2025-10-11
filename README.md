@@ -111,13 +111,9 @@ Parsa Dehghan Pour Farashah
 
 📸 Project Screenshots
 🌟 Overview
-<img src="assets/screenshots/cover.png" alt="Project Overview" width="100%">
-💻 Desktop View
-<img src="assets/screenshots/desktop.png" alt="Desktop View" width="48%"> <img src="assets/screenshots/desktop-2.png" alt="Desktop View 2" width="48%">
+<img src="docs/images/library.png" alt="Project Overview" width="100%">
+💻 Website View
+<img src="docs/images/web.png" alt="Desktop View" width="48%">
 
-📱 Tablet View
-<img src="assets/screenshots/tablet.png" alt="Tablet View" width="60%">
-📱 Mobile View
-<img src="assets/screenshots/mobile.png" alt="Mobile View" width="45%">
 🏷️ License
 Released under the MIT License.

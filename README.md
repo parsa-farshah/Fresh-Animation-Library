@@ -69,42 +69,12 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 ## 📦 Installation
 
-📸 Project Screenshots
-🌟 Overview
+📸 Project Screenshots  
+🌟 Overview  
 <img src="docs/images/library.png" alt="Project Overview" width="100%">
 
-💻 Website View
+💻 Website View  
 <img src="docs/images/web.png" alt="Desktop View" width="100%">
-
-### 🔹 Using NPM
-
-### npm install fresh-animation
-
-## <link rel="stylesheet" href="node_modules/fresh-animation/dist/fresh.min.css"/>
-
-## <script src="node_modules/fresh-animation/dist/fresh.min.js"></script>
-
-🔹 Using CDN
-
-html
-
-Copy code
-
-## <script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
-
-## <link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
-
-### ⚙️ Usage Example
-
-Add the data-fresh attribute to elements:
-
-html
-
-Copy code
-
-<div data-fresh="fadeUp">
-  <h2>Hello, Fresh Animation!</h2>
-</div>
 
 👨‍💻 Developed By
 
@@ -130,6 +100,28 @@ Parsa Dehghan Pour Farashah
 - 📺 YouTube: [@FrontEndFresh](https://youtube.com/@frontendfresh?si=-2WsIYe-KBTUfwyu)
 
 ---
+
+### 🔹 Using NPM
+
+```bash
+npm install fresh-animation
+html
+Copy code
+<link rel="stylesheet" href="node_modules/fresh-animation/dist/fresh.min.css"/>
+<script src="node_modules/fresh-animation/dist/fresh.min.js"></script>
+🔹 Using CDN
+html
+Copy code
+<script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
+⚙️ Usage Example
+Add the data-fresh attribute to elements:
+
+html
+Copy code
+<div data-fresh="fadeUp">
+  <h2>Hello, Fresh Animation!</h2>
+</div>
 
 🏷️ License
 Released under the MIT License.

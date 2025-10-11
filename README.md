@@ -80,15 +80,19 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 ### npm install fresh-animation
 
+## <link rel="stylesheet" href="node_modules/fresh-animation/dist/fresh.min.css"/>
+
+## <script src="node_modules/fresh-animation/dist/fresh.min.js"></script>
+
 🔹 Using CDN
 
 html
 
 Copy code
 
-<script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
+## <script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
 
-<link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
+## <link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
 
 ### ⚙️ Usage Example
 

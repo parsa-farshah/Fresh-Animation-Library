@@ -1,7 +1,7 @@
-# 🎬 Fresh Animation Library v1.0.1
+# 🎬 Fresh Animation Library v1.0.3
 
 A lightweight and modern **JavaScript animation library** that triggers smooth scroll-based animations on your website.  
-Inspired by AOS but optimized for **performance, simplicity, and flexibility**.  
+Inspired by AOS but optimized for **performance, simplicity, and flexibility**.
 
 ---
 
@@ -20,12 +20,12 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 ## ✨ Features
 
-- ⚡ Lightweight, dependency-free (Vanilla JS)  
-- 🌀 Scroll-based animations with ease  
-- 🎨 Prebuilt animation presets for quick integration  
-- 🔧 Works via **NPM** or **CDN**  
-- 🧩 Fully responsive, mobile-friendly  
-- 🪶 Compatible with Tailwind CSS and any custom styling  
+- ⚡ Lightweight, dependency-free (Vanilla JS)
+- 🌀 Scroll-based animations with ease
+- 🎨 Prebuilt animation presets for quick integration
+- 🔧 Works via **NPM** or **CDN**
+- 🧩 Fully responsive, mobile-friendly
+- 🪶 Compatible with Tailwind CSS and any custom styling
 
 ---
 
@@ -37,33 +37,33 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 ## 🛠️ Technologies Used
 
-- **HTML5** – semantic markup  
-- **CSS3** – custom styling and animation classes  
-- **Tailwind CSS** – for utility-first styling  
-- **JavaScript** – triggers scroll-based animations  
-- **Media Queries** – ensures responsiveness  
+- **HTML5** – semantic markup
+- **CSS3** – custom styling and animation classes
+- **Tailwind CSS** – for utility-first styling
+- **JavaScript** – triggers scroll-based animations
+- **Media Queries** – ensures responsiveness
 
 ---
 
 ## 🎨 Available Animations
 
-| Animation Class | Description |
-|-----------------|-------------|
-| `fadeUp` | Fade in and move up |
-| `fadeDown` | Fade in and move down |
-| `fadeLeft` | Fade in from left |
-| `fadeRight` | Fade in from right |
-| `fadeUpLeft` | Fade in diagonally up-left |
-| `fadeUpRight` | Fade in diagonally up-right |
-| `flipLeft` | Rotate Y 90° from left |
-| `flipRight` | Rotate Y -90° from right |
-| `flipUp` | Rotate X -90° up |
-| `flipDown` | Rotate X 90° down |
-| `zoomIn` | Scale in from 0 |
-| `zoomInUp` | Scale in + move up |
-| `zoomInDown` | Scale in + move down |
-| `zoomInLeft` | Scale in + move left |
-| `zoomInRight` | Scale in + move right |
+| Animation Class | Description                 |
+| --------------- | --------------------------- |
+| `fadeUp`        | Fade in and move up         |
+| `fadeDown`      | Fade in and move down       |
+| `fadeLeft`      | Fade in from left           |
+| `fadeRight`     | Fade in from right          |
+| `fadeUpLeft`    | Fade in diagonally up-left  |
+| `fadeUpRight`   | Fade in diagonally up-right |
+| `flipLeft`      | Rotate Y 90° from left      |
+| `flipRight`     | Rotate Y -90° from right    |
+| `flipUp`        | Rotate X -90° up            |
+| `flipDown`      | Rotate X 90° down           |
+| `zoomIn`        | Scale in from 0             |
+| `zoomInUp`      | Scale in + move up          |
+| `zoomInDown`    | Scale in + move down        |
+| `zoomInLeft`    | Scale in + move left        |
+| `zoomInRight`   | Scale in + move right       |
 
 ---
 
@@ -76,48 +76,56 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 💻 Website View
 <img src="docs/images/web.png" alt="Desktop View" width="100%">
 
-
 ### 🔹 Using NPM
-```bash
-npm install fresh-animation
+
+### npm install fresh-animation
+
 🔹 Using CDN
+
 html
+
 Copy code
+
 <script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
+
 <link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
-⚙️ Usage Example
+
+### ⚙️ Usage Example
+
 Add the data-fresh attribute to elements:
 
 html
+
 Copy code
+
 <div data-fresh="fadeUp">
   <h2>Hello, Fresh Animation!</h2>
 </div>
-Initialize in JS:
 
-js
-Copy code
-freshAnimation.init();
 👨‍💻 Developed By
+
 Parsa Dehghan Pour Farashah
 
-🔧 Project Mentor
-@parsa_ghorbanian_web
+## 👨‍🏫 Supervisor
 
-📲 Connect with Me
-📸 Instagram: @parsa_dehghanpour_dv
+- This project was completed under the guidance of my academic supervisor:  
+🔗 [Parsa Ghorbanian's Website](https://trainingsitedesign.ir/)
 
-💼 LinkedIn: Parsa Dehghan Pour Farashah
+- thanks to 🔗 [mehrab Pour zakaria's Website](https://pourzakaria.com/) for helping upload to the npm site
 
-💻 GitHub: parsa-farshah
+## 📲 Connect with Me | ارتباط با من  
 
-📩 Email: parsafarashah2002@gmail.com
+- 📸 Instagram: [@parsa_dehghanpour_dv](https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp) 
 
-📺 YouTube: @FrontEndFresh
+- 💼 LinkedIn: [linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250](http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250)  
 
-🎨 CodePen: Parsa
+- 💻 GitHub: [parsa-farshah](http://github.com/parsa-farshah)  
 
+- 📩 Email: parsafarashah2002@gmail.com  
 
+- 📺 YouTube: [@FrontEndFresh](https://youtube.com/@frontendfresh?si=-2WsIYe-KBTUfwyu)
+
+---
 
 🏷️ License
 Released under the MIT License.

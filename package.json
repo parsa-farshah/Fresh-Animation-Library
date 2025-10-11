@@ -1,6 +1,6 @@
 {
   "name": "fresh-animation",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple animate-on-scroll library like AOS",
   "homepage": "https://parsa-farshah.github.io/Fresh-Animation-Library/",
   "main": "dist/fresh.js",

@@ -69,12 +69,12 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 ## 📦 Installation
 
-  📸 Project Screenshots
+📸 Project Screenshots
 🌟 Overview
 <img src="docs/images/library.png" alt="Project Overview" width="100%">
 
 💻 Website View
-<img src="docs/images/web.png" alt="Desktop View" width="48%">
+<img src="docs/images/web.png" alt="Desktop View" width="100%">
 
 
 ### 🔹 Using NPM

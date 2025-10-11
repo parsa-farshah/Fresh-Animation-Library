@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "description": "A simple animate-on-scroll library like AOS",
   "homepage": "https://parsa-farshah.github.io/Fresh-Animation-Library/",
-  "main": "dist/lumos.js",
-  "module": "dist/lumos.esm.js",
-  "style": "dist/lumos.css",
+  "main": "dist/fresh.js",
+  "module": "dist/fresh.esm.js",
+  "style": "dist/fresh.css",
   "directories": {
     "doc": "docs"
   },

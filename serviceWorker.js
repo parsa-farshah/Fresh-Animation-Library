@@ -1,10 +1,10 @@
 const staticCacheName = "site-static-v1";
 const cacheAssets = [
   "/",
-  "/index.html",
-  "/docs/style/output.css",
-  "/docs/js/main.js",
-  "/docs/js/index.js",
+  "index.html",
+  "docs/style/output.css",
+  "docs/js/index.js",
+  "docs/js/main.js",
 ];
 
 self.addEventListener("install", (evt) => {

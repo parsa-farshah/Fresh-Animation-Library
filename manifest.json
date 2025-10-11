@@ -8,13 +8,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/Fresh-Animation-Library/docs/images/icon512.png",
+      "src": "/Fresh-Animation-Library/docs/images/192fresh.jpg",
       "type": "image/png",
       "sizes": "512×512",
       "purpose": "any maskable"
     },
     {
-      "src": "/Fresh-Animation-Library/docs/images/icon192.png",
+      "src": "/Fresh-Animation-Library/docs/images/512fresh.jpg",
       "sizes": "144x144",
       "type": "image/png"
     }

@@ -78,24 +78,24 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 👨‍💻 Developed By
 
-Parsa Dehghan Pour Farashah
+[parsa dehghan pour farashah](http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250)
 
 ## 👨‍🏫 Supervisor
 
 - This project was completed under the guidance of my academic supervisor:  
-🔗 [Parsa Ghorbanian's Website](https://trainingsitedesign.ir/)
+  🔗 [Parsa Ghorbanian's Website](https://trainingsitedesign.ir/)
 
 - thanks to 🔗 [mehrab Pour zakaria's Website](https://pourzakaria.com/) for helping upload to the npm site
 
-## 📲 Connect with Me | ارتباط با من  
+## 📲 Connect with Me | ارتباط با من
 
-- 📸 Instagram: [@parsa_dehghanpour_dv](https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp) 
+- 📸 Instagram: [@parsa_dehghanpour_dv](https://www.instagram.com/parsa_dehghanpour_dv?igsh=eHkwNWhsa3I4ZWVp)
 
-- 💼 LinkedIn: [linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250](http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250)  
+- 💼 LinkedIn: [parsa dehghan pour farashah](http://linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250)
 
-- 💻 GitHub: [parsa-farshah](http://github.com/parsa-farshah)  
+- 💻 GitHub: [parsa-farshah](http://github.com/parsa-farshah)
 
-- 📩 Email: parsafarashah2002@gmail.com  
+- 📩 Email: parsafarashah2002@gmail.com
 
 - 📺 YouTube: [@FrontEndFresh](https://youtube.com/@frontendfresh?si=-2WsIYe-KBTUfwyu)
 
@@ -138,3 +138,4 @@ Copy code
 
 🏷️ License
 Released under the MIT License.
+```

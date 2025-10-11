@@ -105,20 +105,33 @@ Parsa Dehghan Pour Farashah
 
 ```bash
 npm install fresh-animation
+
 html
+
 Copy code
+
 <link rel="stylesheet" href="node_modules/fresh-animation/dist/fresh.min.css"/>
 <script src="node_modules/fresh-animation/dist/fresh.min.js"></script>
+
+
+
 🔹 Using CDN
+
 html
+
 Copy code
+
 <script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
+
+
 ⚙️ Usage Example
 Add the data-fresh attribute to elements:
 
+
 html
 Copy code
+
 <div data-fresh="fadeUp">
   <h2>Hello, Fresh Animation!</h2>
 </div>

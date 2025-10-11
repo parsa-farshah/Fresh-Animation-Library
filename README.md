@@ -69,6 +69,14 @@ Use it with **NPM** or **CDN**, fully responsive, and works seamlessly with **Ta
 
 ## 📦 Installation
 
+  📸 Project Screenshots
+🌟 Overview
+<img src="docs/images/library.png" alt="Project Overview" width="100%">
+
+💻 Website View
+<img src="docs/images/web.png" alt="Desktop View" width="48%">
+
+
 ### 🔹 Using NPM
 ```bash
 npm install fresh-animation
@@ -109,11 +117,7 @@ Parsa Dehghan Pour Farashah
 
 🎨 CodePen: Parsa
 
-📸 Project Screenshots
-🌟 Overview
-<img src="docs/images/library.png" alt="Project Overview" width="100%">
-💻 Website View
-<img src="docs/images/web.png" alt="Desktop View" width="48%">
+
 
 🏷️ License
 Released under the MIT License.

@@ -1,4 +1,4 @@
-# 🎬 Fresh Animation Library v1.0.5
+# 🎬 Fresh Animation Library v1.0.6
 
 A lightweight and modern **JavaScript animation library** that triggers smooth scroll-based animations on your website.  
 Inspired by AOS but optimized for **performance, simplicity, and flexibility**.
@@ -121,8 +121,8 @@ html
 
 Copy code
 
-<link rel="stylesheet" href="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.css">
-<script src="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/fresh-animation@1.0.6/dist/fresh.min.css">
+<script src="https://unpkg.com/fresh-animation@1.0.6/dist/fresh.min.js"></script>
 
 
 ⚙️ Usage Example

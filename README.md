@@ -121,8 +121,8 @@ html
 
 Copy code
 
-<script src="https://unpkg.com/fresh-animation/dist/fresh-animation.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/fresh-animation/dist/fresh-animation.css" />
+<link rel="stylesheet" href="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.css">
+<script src="https://unpkg.com/fresh-animation@1.0.1/dist/fresh.min.js"></script>
 
 
 ⚙️ Usage Example

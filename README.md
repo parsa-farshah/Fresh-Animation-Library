@@ -1,4 +1,4 @@
-# 🎬 Fresh Animation Library v1.0.4
+# 🎬 Fresh Animation Library v1.0.5
 
 A lightweight and modern **JavaScript animation library** that triggers smooth scroll-based animations on your website.  
 Inspired by AOS but optimized for **performance, simplicity, and flexibility**.
